@@ -240,7 +240,8 @@ def behavior_launcher_main(node_args=None):
     print("Set up behavior_launcher ROS connections ...", flush=True)
     node_args = sys.argv[stop_index:]
     rclpy.init(args=node_args,
-               signal_handler_options=rclpy.signals.SignalHandlerOptions.NO)  # We will handle shutdown
+            #    signal_handler_options=rclpy.signals.SignalHandlerOptions.NO)  # We will handle shutdown
+    )
 
     launcher = BehaviorLauncher()
     executor = rclpy.executors.MultiThreadedExecutor(num_threads=2)

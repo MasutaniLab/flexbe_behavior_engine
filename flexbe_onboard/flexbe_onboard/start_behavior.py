@@ -39,7 +39,8 @@ from flexbe_onboard.flexbe_onboard import FlexbeOnboard
 def main(args=None):
     """Script for starting the onboard behavior engine."""
     rclpy.init(args=args,
-               signal_handler_options=rclpy.signals.SignalHandlerOptions.NO)  # We will handle shutdown
+            #    signal_handler_options=rclpy.signals.SignalHandlerOptions.NO)  # We will handle shutdown
+    )
 
     onboard = FlexbeOnboard()
 

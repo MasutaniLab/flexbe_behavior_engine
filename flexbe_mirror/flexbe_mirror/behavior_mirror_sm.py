@@ -38,7 +38,8 @@ from flexbe_mirror.flexbe_mirror import FlexbeMirror
 def main(args=None):
     """Run main function to start up the FlexBE mirror of onboard statemachine."""
     rclpy.init(args=args,
-               signal_handler_options=rclpy.signals.SignalHandlerOptions.NO)  # We will handle shutdown
+            #    signal_handler_options=rclpy.signals.SignalHandlerOptions.NO)  # We will handle shutdown
+    )
 
     mirror = FlexbeMirror()
 
